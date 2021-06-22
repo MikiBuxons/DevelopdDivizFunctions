@@ -5,7 +5,7 @@
 			<criterionID>Divergence</criterionID>
 			<values>
 				<value>
-					<real>0.027777777777777776</real>
+					<real>0.028</real>
 				</value>
 			</values>
 		</criterionValues>

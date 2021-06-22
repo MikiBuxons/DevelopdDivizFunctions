@@ -5,7 +5,7 @@
 			<criterionID>Entropy</criterionID>
 			<values>
 				<value>
-					<real>1.3862943611198906</real>
+					<real>1.386</real>
 				</value>
 			</values>
 		</criterionValues>

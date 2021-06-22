@@ -110,5 +110,5 @@ owaDescriptorMethod <- function(inputs)
       stop("Error in owa_descriptors operations ")
     }
   }
-  return(list(ornes=result[1], balance=result[2], entropy=result[3], divergence=result[4]))
+  return(list(ornes=round(result[1],3), balance=round(result[2],3), entropy=round(result[3],3), divergence=round(result[4],3)))
 }
