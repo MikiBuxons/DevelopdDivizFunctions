@@ -95,7 +95,7 @@ defuzzyCalculation <- function(inputs)
     resultOrd <- c(resultOrd, x3)
   }
   
-  return(list(lambdaCog = resultCog, lambdaCom = resultCom, lambdaOrd = resultOrd, solverStatus = solverStatus))
+  return(list(lambdaCog = round(resultCog,4), lambdaCom = round(resultCom,4), lambdaOrd = resultOrd, solverStatus = solverStatus))
 }
 
 defuzzificationMethod <- function(inputs)

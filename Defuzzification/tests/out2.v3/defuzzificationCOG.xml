@@ -13,7 +13,7 @@
 			<alternativeID>Irrigation Outlet Rehabilitation</alternativeID>
 			<values>
 				<value>
-					<real>0.43333333333333335</real>
+					<real>0.4333</real>
 				</value>
 			</values>
 		</alternativeValues>
@@ -21,7 +21,7 @@
 			<alternativeID>Irrigation Outlet Replacement</alternativeID>
 			<values>
 				<value>
-					<real>0.43333333333333335</real>
+					<real>0.4333</real>
 				</value>
 			</values>
 		</alternativeValues>

@@ -6,6 +6,6 @@
  
 -----------------------------------------------------------------------
 case 4:
-	Na in a fuzzy Number
+	NaN in a fuzzy Number
 
 	Output expected: Error: the continuity in (Very-Low) fuzzy label is not guaranteed, check the segments of the labels.
