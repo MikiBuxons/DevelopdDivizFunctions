@@ -23,7 +23,7 @@ owa_calculation <- function(inputs)
   }
   #put the name for each alternative
   names(result) <- rownames(performanceTable)
-  return(list(lambda = result, solverStatus = solverStatus))
+  return(list(lambda = round(result,3), solverStatus = solverStatus))
 }
 
 owaMethod <- function(inputs)
