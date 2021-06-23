@@ -1,8 +1,8 @@
 <?xml version="1.0" ?>
 <xmcda xmlns="http://www.decision-deck.org/2020/XMCDA-4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.decision-deck.org/2020/XMCDA-4.0.0 http://www.decision-deck.org/xmcda/_downloads/XMCDA-4.0.0.xsd">
-<criteriaScales id="fuzzy-numbers">
+<criteriaScales>
       <criterionScales>
-          <criterionID>fz1</criterionID>
+          <criterionID>Complexity in Implementation</criterionID>
           <scales>
               <scale id="fuzzy-scales">
                   <qualitative>
@@ -206,6 +206,48 @@
                       </valuedLabels>
                   </qualitative>
               </scale>
+          </scales>
+      </criterionScales>
+      <criterionScales>
+          <criterionID>Construction and Operation Time</criterionID>
+          <scales>
+              <scaleID>fuzzy-scales</scaleID>
+          </scales>
+      </criterionScales>
+      <criterionScales>
+          <criterionID>Economic Costs</criterionID>
+          <scales>
+              <scaleID>fuzzy-scales</scaleID>
+          </scales>
+      </criterionScales>
+      <criterionScales>
+          <criterionID>Economic Benefits</criterionID>
+          <scales>
+              <scaleID>fuzzy-scales</scaleID>
+          </scales>
+      </criterionScales>
+      <criterionScales>
+          <criterionID>Effects on Fishes</criterionID>
+          <scales>
+              <scaleID>fuzzy-scales</scaleID>
+          </scales>
+      </criterionScales>
+      <criterionScales>
+          <criterionID>Effects on Water Users</criterionID>
+          <scales>
+              <scaleID>fuzzy-scales</scaleID>
+          </scales>
+      </criterionScales>
+      <criterionScales>
+          <criterionID>Effects on Water Quality</criterionID>
+          <scales>
+              <scaleID>fuzzy-scales</scaleID>
+          </scales>
+      </criterionScales>
+      <criterionScales>
+          <criterionID>Resettement</criterionID>
+          <scales>
+              <scaleID>fuzzy-scales</scaleID>
           </scales>
       </criterionScales>
 </criteriaScales>

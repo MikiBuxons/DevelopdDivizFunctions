@@ -8,4 +8,4 @@
 case 15:
 	Orness parameter with value out of the range [0:1].
 
-	Output expected: "Error: Orness value must be a real number inside the [0:1] range".
+	Output expected: Error: Orness value must be a real number inside the [0:1] range.

@@ -8,4 +8,4 @@
 case 4:
 	Different number of active critera and ulowa weights.
 
-	Output expected: Error: different number of active weights and active criteria Error: An error has occured while checking and extracting the inputs.
+	Output expected: Error: different number of active weights and active criteria. Error: An error has occured while checking and extracting the inputs.
