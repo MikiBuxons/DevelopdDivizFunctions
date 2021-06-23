@@ -51,7 +51,7 @@ descriptorsCalculation <- function(inputs)
     xSpVector <- c(xSpVector, x)
   }
   
-  return(list(lambdaSp = xSpVector, lambdaFu = xFuVector, solverStatus = solverStatus))
+  return(list(lambdaSp = round(xSpVector,4), lambdaFu = round(xFuVector,4), solverStatus = solverStatus))
 }
 
 descriptorsMethod <- function(inputs)

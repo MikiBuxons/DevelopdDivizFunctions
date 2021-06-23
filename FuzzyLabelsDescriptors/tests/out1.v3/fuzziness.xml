@@ -21,7 +21,7 @@
 			<alternativeID>Medium</alternativeID>
 			<values>
 				<value>
-					<real>0.19999999999999998</real>
+					<real>0.2</real>
 				</value>
 			</values>
 		</alternativeValues>
@@ -29,7 +29,7 @@
 			<alternativeID>Almost-High</alternativeID>
 			<values>
 				<value>
-					<real>0.09999999999999998</real>
+					<real>0.1</real>
 				</value>
 			</values>
 		</alternativeValues>
@@ -37,7 +37,7 @@
 			<alternativeID>High</alternativeID>
 			<values>
 				<value>
-					<real>0.09999999999999998</real>
+					<real>0.1</real>
 				</value>
 			</values>
 		</alternativeValues>
@@ -45,7 +45,7 @@
 			<alternativeID>Very-High</alternativeID>
 			<values>
 				<value>
-					<real>0.09999999999999998</real>
+					<real>0.1</real>
 				</value>
 			</values>
 		</alternativeValues>
@@ -53,7 +53,7 @@
 			<alternativeID>Perfect</alternativeID>
 			<values>
 				<value>
-					<real>0.04999999999999999</real>
+					<real>0.05</real>
 				</value>
 			</values>
 		</alternativeValues>

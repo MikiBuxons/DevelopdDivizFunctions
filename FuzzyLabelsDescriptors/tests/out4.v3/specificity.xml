@@ -5,7 +5,7 @@
 			<alternativeID>Very-Low</alternativeID>
 			<values>
 				<value>
-					<real>0.9090909090909091</real>
+					<real>0.9091</real>
 				</value>
 			</values>
 		</alternativeValues>
@@ -13,7 +13,7 @@
 			<alternativeID>Low</alternativeID>
 			<values>
 				<value>
-					<real>0.7727272727272727</real>
+					<real>0.7727</real>
 				</value>
 			</values>
 		</alternativeValues>
@@ -21,7 +21,7 @@
 			<alternativeID>Medium</alternativeID>
 			<values>
 				<value>
-					<real>0.8181818181818182</real>
+					<real>0.8182</real>
 				</value>
 			</values>
 		</alternativeValues>
@@ -29,7 +29,7 @@
 			<alternativeID>Almost-High</alternativeID>
 			<values>
 				<value>
-					<real>0.9090909090909092</real>
+					<real>0.9091</real>
 				</value>
 			</values>
 		</alternativeValues>
@@ -37,7 +37,7 @@
 			<alternativeID>High</alternativeID>
 			<values>
 				<value>
-					<real>0.8181818181818181</real>
+					<real>0.8182</real>
 				</value>
 			</values>
 		</alternativeValues>
@@ -45,7 +45,7 @@
 			<alternativeID>Very-High</alternativeID>
 			<values>
 				<value>
-					<real>0.9090909090909092</real>
+					<real>0.9091</real>
 				</value>
 			</values>
 		</alternativeValues>
@@ -53,7 +53,7 @@
 			<alternativeID>Perfect</alternativeID>
 			<values>
 				<value>
-					<real>0.9090909090909091</real>
+					<real>0.9091</real>
 				</value>
 			</values>
 		</alternativeValues>

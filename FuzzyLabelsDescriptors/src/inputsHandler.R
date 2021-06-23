@@ -3,20 +3,33 @@ checkAndExtractInputs <- function(xmcdaData, programExecutionResult) {
     # get fuzzy numbers
     #############################################
     
-    fuzzy <- xmcdaData$criteriaScalesList$get(as.integer(0))
-    criterionScales <- fuzzy$get(as.integer(0))
-    criterionID <- criterionScales$getCriterion()$id()
-    
     # check if more than one criteria scale
-    if (criterionScales$size()> 1)
-      stop("Error: More than one criteriaScale supplied. ")
+    if (xmcdaData$criteriaScalesList$size()> 1)
+      stop("Error: More than one criteriaScales supplied. ")
     
-    scale <- criterionScales$get(as.integer(0))
+    fuzzyNumbers <- xmcdaData$criteriaScalesList$get(as.integer(0))
+    criterionScale <- fuzzyNumbers$get(as.integer(0)) # original
+    criterionID <- criterionScale$getCriterion()$id()
+    
+    # check if there are any other original Fuzzy Number Scale, it only accept one Fuzzy set and the other ones are references to the original
+    if (fuzzyNumbers$size()>1){
+      for (i in 1:(fuzzyNumbers$size()-1)){
+        actFuzzy <- fuzzyNumbers$get(as.integer(i))
+        if (!actFuzzy == criterionScale)
+          stop("Error: More than one different Fuzzy Number scale supplied. ")
+      }
+    }
+    
+    scale <- criterionScale$get(as.integer(0))
     prefDirection <- scale$getPreferenceDirection()
     
     # check if there are erroneous format
     if (!(scale %instanceof% J("org/xmcda/QualitativeScale")))
       stop("Error: detected error at scale format composition. ")
+    
+    # reference to undefined scale
+    if (scale$isUnresolved())
+      stop("Error: Fuzzy number is a reference to a undefined scale. ")
     
     fuzzyN <- vector()
     labels <- vector()
