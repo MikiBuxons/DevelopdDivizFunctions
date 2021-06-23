@@ -5,7 +5,7 @@
 			<alternativeID>Poznanzki</alternativeID>
 			<values>
 				<value>
-					<real>0.1609375</real>
+					<real>0.161</real>
 				</value>
 			</values>
 		</alternativeValues>
@@ -13,7 +13,7 @@
 			<alternativeID>Traffic</alternativeID>
 			<values>
 				<value>
-					<real>0.3234375</real>
+					<real>0.323</real>
 				</value>
 			</values>
 		</alternativeValues>
@@ -21,7 +21,7 @@
 			<alternativeID>NovotelCentrum</alternativeID>
 			<values>
 				<value>
-					<real>0.8265625</real>
+					<real>0.827</real>
 				</value>
 			</values>
 		</alternativeValues>
@@ -45,7 +45,7 @@
 			<alternativeID>PoznanClassApartm</alternativeID>
 			<values>
 				<value>
-					<real>0.2765625</real>
+					<real>0.277</real>
 				</value>
 			</values>
 		</alternativeValues>
