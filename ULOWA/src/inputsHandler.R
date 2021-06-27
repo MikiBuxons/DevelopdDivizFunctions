@@ -133,8 +133,8 @@ checkAndExtractInputs <- function(xmcdaData, programExecutionResult) {
       #control if the document structure is correct
       aux <- names(parameters)
       if ((length(aux) != 2) || !("active" %in% aux) || !("orness" %in% aux))
-        stop("Error: Estructural error in program parameters file. ")
-      
+        stop("Error: missing parameter 'orness' and/or 'active' in the program parameters file. ")
+
       #we only wait almost one program parameters list
       for(j in 1:length(parameters))
       {
@@ -155,19 +155,19 @@ checkAndExtractInputs <- function(xmcdaData, programExecutionResult) {
     }
     
     if (!hasWeights && !hasParameters)
-      stop("Error: No weigths supplied. ")
+      stop("Error: No weights supplied. Either supply some weights or an orness value in the parameters. ")
     
     if (!hasWeights & hasParameters && !activeParameters)
       stop("Error: inactive orness supplied without alternatives. ")
     
     if (hasWeights && hasParameters && activeParameters)
-      stop("Error: too many weights options supplied (weigths table and orness, only one is needed). ")
+      stop("Error: too many weights options supplied (weights table and orness, only one is needed). ")
     
     
     #case: weights table is provided and/or program parameters is inactive 
     if(hasWeights){
       if (xmcdaData$criteriaSetsValuesList$size() > 1)
-        stop("Error: More than one weigths table supplied. ")
+        stop("Error: More than one weights table supplied. ")
       
       criteriaSetValues = xmcdaData$criteriaSetsValuesList$get(as.integer(0))
       qvalues <- as.list(criteriaSetValues$values())[[1]]
@@ -202,9 +202,9 @@ checkAndExtractInputs <- function(xmcdaData, programExecutionResult) {
     if (anyNA(weights))
       stop("Error: there is a missing value (NA) in owa weights vector. ")
     
-    # check if the summatory of all weights is =1
+    # check if the sum of all weights is =1
     if(sum(weights) != 1)
-      stop("Error: the summatory of all active weights must be exacly 1.0. ")
+      stop("Error: the sum of all active weights must be exactly 1.0. ")
     
     
     #############################################
