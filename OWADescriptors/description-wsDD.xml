@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <program_description xsi:noNamespaceSchemaLocation="http://sma.uni.lu/d2cms/ws/_downloads/description.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<program name="OWADescriptors" provider="URV" version="4.0" displayName="OWADescriptors"/>
+	<program name="OWA_weights-descriptors" provider="URV" version="4.0" displayName="OWADescriptors"/>
 	<documentation>
 		<description>Compute measures of weights given to the Ordered Weighted Average. The Ordered Weighted Averaging operators, commonly called OWA operators, provide a parameterized class of mean type aggregation operators.
 For OWA wights exists different measures to characterise a set of weights associated to an OWA operator. In this module we implement the measures: balance, divergence, entropy and ornes.</description>
