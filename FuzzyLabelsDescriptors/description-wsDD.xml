@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <program_description xsi:noNamespaceSchemaLocation="http://sma.uni.lu/d2cms/ws/_downloads/description.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<program name="FuzzyLabelsDescriptors" provider="URV" version="4.0" displayName="FuzzyLabelsDescriptors"/>
+	<program name="Fuzzy-Labels_descriptors" provider="URV" version="4.0" displayName="Fuzzy-Labels_descriptors"/>
 	<documentation>
 		<description>Two types of uncertainty in fuzzy sets are recognized: (1) specificity, related to the measurement of imprecision, which is based on the cardinality of the set, and (2) fuzziness, or entropy, which measures the vagueness of the set as a result of having imprecise boundaries. Specificity and fuzziness refer to two different characteristics of fuzzy sets. Specificity (or its counterpart, non-specificity) measures the degree of truth of the sentence: Containing just one element. Fuzziness measures the difference from a crisp set.</description>
 		<contact>Aida Valls &lt;aida.valls@urv.cat&gt;</contact>

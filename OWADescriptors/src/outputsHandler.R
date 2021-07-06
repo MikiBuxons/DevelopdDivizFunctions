@@ -1,6 +1,6 @@
 XMCDA_v3_TAG_FOR_FILENAME <- list(
   # output name -> XMCDA v3 tag
-  ornes <- "criteriaValues",
+  orness <- "criteriaValues",
   balance <- "criteriaValues",
   entropy <- "criteriaValues",
   divergence <- "criteriaValues",
@@ -17,14 +17,14 @@ convert <- function(descriptorsValues, programExecutionResult) {
   # converts the outputs of the computation to XMCDA objects
   
   # translate the results into XMCDA v3
-  xmcdaOrnes<-.jnew("org/xmcda/XMCDA")
+  xmcdaOrness<-.jnew("org/xmcda/XMCDA")
   xmcdaBalance<-.jnew("org/xmcda/XMCDA")
   xmcdaEntropy<-.jnew("org/xmcda/XMCDA")
   xmcdaDivergence<-.jnew("org/xmcda/XMCDA")
   
   tmp<-handleException(
     function() return(c(
-      putCriteriaValues(xmcdaOrnes,descriptorsValues$ornes),
+      putCriteriaValues(xmcdaOrness,descriptorsValues$orness),
       putCriteriaValues(xmcdaBalance,descriptorsValues$balance),
       putCriteriaValues(xmcdaEntropy,descriptorsValues$entropy),
       putCriteriaValues(xmcdaDivergence,descriptorsValues$divergence)
@@ -39,7 +39,7 @@ convert <- function(descriptorsValues, programExecutionResult) {
   if (is.null(tmp)){
     return(null)
   } else{
-    return (list(ornes = xmcdaOrnes, balance=xmcdaBalance, entropy=xmcdaEntropy, divergence=xmcdaDivergence))
+    return (list(orness = xmcdaOrness, balance=xmcdaBalance, entropy=xmcdaEntropy, divergence=xmcdaDivergence))
   }
   
 }

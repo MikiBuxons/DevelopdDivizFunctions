@@ -1,4 +1,4 @@
-ornes <- function(inputs)
+orness <- function(inputs)
 {
   #put the inputs in local variables to work better
   weights = inputs$weights
@@ -7,7 +7,7 @@ ornes <- function(inputs)
   #return variable
   result <-0
   
-  #Ornes calculation
+  #Orness calculation
   for (i in 1:length(weights)){
     actual <- weights[i]
     actual <- actual*((n-i)/(n-1))
@@ -16,7 +16,7 @@ ornes <- function(inputs)
   }
   
   #put the name for each alternative
-  names(result) <- "Ornes"
+  names(result) <- "Orness"
   return(list(lambda = result))
 }
 
@@ -68,14 +68,14 @@ entropy <- function(inputs)
   return(list(lambda = result))
 }
 
-divergence <- function(inputs, ornes)
+divergence <- function(inputs, orness)
 {
   #put the inputs in local variables to work better
   weights = inputs$weights
   n<-length(weights)
-  ornesValue = ornes
-  if (is.null(ornesValue))
-    stop("Ornes value in Divergence calculation is null ")
+  ornessValue = orness
+  if (is.null(ornessValue))
+    stop("Orness value in Divergence calculation is null ")
   
   #return variable
   result <-0
@@ -83,7 +83,7 @@ divergence <- function(inputs, ornes)
   #Divergence calculation
   for (i in 1:length(weights)){
     actual <- weights[i]
-    actual <- actual*((((n-i)/(n-1))-ornes)^2)
+    actual <- actual*((((n-i)/(n-1))-orness)^2)
     result<-result + actual
     
   }
@@ -97,7 +97,7 @@ divergence <- function(inputs, ornes)
 owaDescriptorMethod <- function(inputs)
 {
   #execute the operations owa_descriptors
-  result <- ornes(inputs)$lambda
+  result <- orness(inputs)$lambda
   result <- c(result, balance(inputs)$lambda)
   result <- c(result, entropy(inputs)$lambda)
   result <- c(result, divergence(inputs, result[1])$lambda)
@@ -110,5 +110,5 @@ owaDescriptorMethod <- function(inputs)
       stop("Error in owa_descriptors operations ")
     }
   }
-  return(list(ornes=round(result[1],3), balance=round(result[2],3), entropy=round(result[3],3), divergence=round(result[4],3)))
+  return(list(orness=round(result[1],3), balance=round(result[2],3), entropy=round(result[3],3), divergence=round(result[4],3)))
 }

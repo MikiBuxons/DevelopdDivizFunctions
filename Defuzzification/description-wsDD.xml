@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <program_description xsi:noNamespaceSchemaLocation="http://sma.uni.lu/d2cms/ws/_downloads/description.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<program name="Defuzzification" provider="URV" version="4.0" displayName="Defuzzification"/>
+	<program name="Fuzzy-Labels_defuzzification" provider="URV" version="4.0" displayName="Fuzzy-Labels_defuzzification"/>
 	<documentation>
 		<description>This module implements three different methods to defuzzificate the result of a ULOWA operation (Unbalanced Linguistic Ordered Weighted Average). Aggregation operators for linguistic variables usually assume uniform and symmetrical distribution of the linguistic terms that define the variable. However, there are some problems where an unbalanced set of linguistic terms is more appropriate to describe the objects. ULOWA accepts a set of linguistic labels defined with unbalanced fuzzy sets. The fuzzy sets must define a fuzzy partition on the set of reference values. They can be defined by trapezoidal or triangular membership functions.
 For this method we apply three different operations for every ULOWA alternative result: COG, COM and Ordinal.

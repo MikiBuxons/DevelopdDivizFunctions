@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <program_description xsi:noNamespaceSchemaLocation="http://sma.uni.lu/d2cms/ws/_downloads/description.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<program name="OWA" provider="URV" version="4.0" displayName="OWA"/>
+	<program name="OWA_aggregation" provider="URV" version="4.0" displayName="OWA aggregation"/>
 	<documentation>
 		<description>This module implements the OWA aggregation operator: The Ordered Weighted Averaging operators, commonly called OWA operators, provide a parameterized class of mean type aggregation operators.
 OWA was defined by R.R. Yager 1988. Here we provide an implementation of OWA operator. The main characteristic of this aggregation operator is the fact that the weights are associated to values instead of criteria. In this way, we can define different aggregation policies according to the importance that we associate to high and low performance scores.</description>
