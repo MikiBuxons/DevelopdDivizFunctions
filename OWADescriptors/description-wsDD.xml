@@ -3,7 +3,7 @@
 	<program name="OWA_weights-descriptors" provider="URV" version="4.0" displayName="OWADescriptors"/>
 	<documentation>
 		<description>Compute measures of weights given to the Ordered Weighted Average. The Ordered Weighted Averaging operators, commonly called OWA operators, provide a parameterized class of mean type aggregation operators.
-For OWA wights exists different measures to characterise a set of weights associated to an OWA operator. In this module we implement the measures: balance, divergence, entropy and ornes.</description>
+For OWA weights exists different measures to characterise a set of weights associated to an OWA operator. In this module we implement the measures: balance, divergence, entropy and orness.</description>
 		<contact>Aida Valls &lt;aida.valls@urv.cat&gt;</contact>
 		<reference>A. Valls, The Ordered Weighted Averaging Operator, In: Proc. IEEE International Conference on Fuzzy Systems, FUZZ-IEEE 2010, IEEE Computer Society, Barcelona, Catalonia, 2010, pp. 3063-3070.</reference>
 	</documentation>
@@ -56,9 +56,9 @@ Notice that the sum of weights is required to be 1. In version 4.0 the weights h
 		  <xmcda tag="alternativesValues"/>
 		</output>
 
-		<output displayName="ornes" name="ornes" id="output3">
+		<output displayName="orness" name="orness" id="output3">
 		  <documentation>
-			<description>Result obtained apply ornes calculation in weights table. It will be a single numeric value.</description>
+			<description>Result obtained apply orness calculation in weights table. It will be a single numeric value.</description>
 		  </documentation>
 		  <xmcda tag="alternativesValues"/>
 		</output>

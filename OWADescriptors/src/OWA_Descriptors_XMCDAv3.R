@@ -49,7 +49,7 @@ outDirectory <- commandArgs(trailingOnly=TRUE)[2]
 weightsFile <- "weightsOWA.xml"
 
 # output
-outputFileNames <- c("ornes.xml","balance.xml","entropy.xml","divergence.xml")
+outputFileNames <- c("orness.xml","balance.xml","entropy.xml","divergence.xml")
 messagesFile <- "messages.xml"
 # the Java xmcda object for the output messages
 
